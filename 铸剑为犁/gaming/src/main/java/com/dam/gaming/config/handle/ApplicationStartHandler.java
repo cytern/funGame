@@ -25,6 +25,6 @@ public class ApplicationStartHandler implements ApplicationListener<ContextRefre
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-          helloWorld.run();
+          demoView.run();
     }
 }

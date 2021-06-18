@@ -1,12 +1,13 @@
 package com.dam.gaming.view;
 
+import com.dam.gaming.engine.Input;
 import com.dam.gaming.engine.Window;
 import com.dam.gaming.pojo.WindowPojo;
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.lwjgl.glfw.GLFW;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+
+import static org.lwjgl.glfw.GLFW.*;
 
 /**
  * @author : dam
@@ -15,11 +16,20 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-@AllArgsConstructor
+
 public class DemoView {
     private final Window window;
-    public static long time;
-    private static int frames;
+    private final Input input;
+
+    private float r = 0;
+    private float g = 0;
+    private float b = 0;
+
+    public DemoView(Window window, Input input) {
+        this.window = window;
+        this.input = input;
+    }
+
 
     public void render() {
         window.swapBuffers();
@@ -27,27 +37,31 @@ public class DemoView {
 
     public void update() {
         window.update();
-        frames ++ ;
-        if (System.currentTimeMillis() > time + 1000) {
-            log.info("打印的frame 为 =[{}]",frames);
-            time = System.currentTimeMillis();
-            frames = 0;
+        if (input.isButtonDown(GLFW_MOUSE_BUTTON_LEFT)){
+            log.info("X:  [{}], Y: [{}]",input.getMouseX(),input.getMouseY() );
         }
     }
     public void run () {
         init();
         while (!window.shouldClose()){
-            render();
             update();
+            render();
+            if (input.isKeyDown(GLFW_KEY_Q)) {
+                log.info("输入了Q");
+            }
+            if (input.isKeyDown(GLFW_KEY_ESCAPE)) {
+                break;
+            }
         }
+        window.destroy();
     }
 
     public void init() {
         log.info("初始化游戏");
         WindowPojo windowPojo = WindowPojo.getDemoPojo();
         window.setWindowPojo(windowPojo);
+        window.setBackgroundColor(1,0,0);
         window.create();
-        time = System.currentTimeMillis();
     }
     @Async("taskPool")
     public void start(){
