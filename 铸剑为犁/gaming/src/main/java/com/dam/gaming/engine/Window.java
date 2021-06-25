@@ -1,6 +1,7 @@
 package com.dam.gaming.engine;
 
 import com.dam.gaming.pojo.WindowPojo;
+import com.dam.gaming.service.math.Vector3f;
 import lombok.extern.slf4j.Slf4j;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
@@ -27,12 +28,13 @@ public class Window {
     private long windowId;
     private long time;
     private Integer frames = 0;
-    private float backgroundR,backgroundG,backgroundB;
     private GLFWWindowSizeCallback windowSizeCallback;
     private boolean isResize;
     private boolean isFullScreen = false;
     private int windowPosX;
     private int windowPosY;
+
+    private Vector3f vector3f =  new Vector3f(0,0,0);
 
     public Window(Input input) {
         this.input = input;
@@ -66,6 +68,8 @@ public class Window {
         GLFW.glfwSwapInterval(1);
         createCallbacks();
         time = System.currentTimeMillis();
+        Vector3f vector3f = new Vector3f(0,0,0);
+        this.vector3f = vector3f;
     }
 
 
@@ -80,7 +84,7 @@ public class Window {
                 GLFW.glfwSetWindowMonitor(windowId,0,0,0,windowPojo.getWidth(),windowPojo.getHeight(),0);
             }
         }
-        GL11.glClearColor(backgroundR,backgroundG,backgroundB,1.0f);
+        GL11.glClearColor(vector3f.getX(),vector3f.getY(),vector3f.getZ(),1.0f);
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
         GLFW.glfwPollEvents();
         frames++;
@@ -108,9 +112,9 @@ public class Window {
     }
 
     public void setBackgroundColor( float r,float g,float b) {
-        backgroundR = r;
-        backgroundB = b;
-        backgroundG = g;
+       vector3f.setY(r);
+       vector3f.setY(g);
+       vector3f.setZ(b);
 
     }
 

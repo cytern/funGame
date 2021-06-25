@@ -4,14 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81f20385-abd7-4200-91a5-f83edbf27166" name="Default Changelist" comment="基础项目添加">
-      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/engine/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/service/VectorDemo.java" afterDir="false" />
+    <list default="true" id="81f20385-abd7-4200-91a5-f83edbf27166" name="Default Changelist" comment="learning: 窗口和输入">
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/engine/Shader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/engine/util/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/graphics/Mesh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/graphics/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/graphics/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/service/math/Vector3f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/view/inte/GameWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/graphics/Mesh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/graphics/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/graphics/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/io/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/io/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/engine/maths/Vector3f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/pic/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/bg.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/bg.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/default.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/default.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/demo.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/demo01.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/fade.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/fade.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/hero.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/hero.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/object.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/object.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/pipe.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/pipe.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/spell.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/spell.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/terrain.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaming/src/main/resources/shaders/terrain.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/config/handle/ApplicationStartHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/config/handle/ApplicationStartHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/engine/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/view/DemoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/view/DemoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/view/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/view/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/pojo/WindowPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/src/main/java/com/dam/gaming/pojo/WindowPojo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GLSL Shader" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,7 +69,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1u1FcVCWd7FI1xfV94vHrboFkWR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -52,11 +86,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gaming/src/main/java/com/dam/rendering" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\铸剑为犁\gaming\src\main\java\com\dam\rendering" />
+      <recent name="D:\projects\铸剑为犁\gaming\src\main\resources\pic" />
+      <recent name="D:\projects\铸剑为犁\gaming\src\main\resources\shaders" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dam.gaming.view" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.GamingApplication">
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -72,6 +117,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dam.rendering.main.Main" />
+      <module name="gaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dam.rendering.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GamingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gaming" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dam.gaming.GamingApplication" />
@@ -81,6 +152,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
@@ -95,7 +167,12 @@
       <updated>1623825268358</updated>
       <workItem from="1623825269454" duration="7885000" />
       <workItem from="1623892832976" duration="10115000" />
-      <workItem from="1623978949519" duration="789000" />
+      <workItem from="1623978949519" duration="1376000" />
+      <workItem from="1624000025618" duration="3004000" />
+      <workItem from="1624237602669" duration="3199000" />
+      <workItem from="1624268253894" duration="316000" />
+      <workItem from="1624412552617" duration="11995000" />
+      <workItem from="1624593361096" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="基础项目添加">
       <created>1623837618620</created>
@@ -104,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623837618621</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="learning: 窗口和输入">
+      <created>1623999427708</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623999427708</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +208,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="基础项目添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="基础项目添加" />
+    <MESSAGE value="learning: 窗口和输入" />
+    <option name="LAST_COMMIT_MESSAGE" value="learning: 窗口和输入" />
   </component>
 </project>
